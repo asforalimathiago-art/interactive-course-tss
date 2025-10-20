@@ -1,0 +1,3 @@
+id,module,topic,difficulty,type,stem,choices,answer_key,rationale,tags
+1000,1,basic_errors,2,mcq,Avoid skipping confirmation?,"[""Thanks"", ""Please confirm via steps A\u2013C"", ""Closing"", ""Later""]",1,Verify resolution.,basic_errors
+1201,13,habits_visual,2,mcq,Client wants to see art applied; first step?,"[""Send files"", ""Show context mockups"", ""Skip previews"", ""Wait""]",1,Visual validation: show mockups.,habits_visual

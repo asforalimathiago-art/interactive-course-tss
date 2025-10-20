@@ -1,0 +1,8 @@
+version: 1
+selection_strategy: {policy: hybrid, mastery_threshold: 0.85}
+branches:
+  role:
+    - {when: "role == 'support'", prefer_modules: [1,2]}
+feedback:
+  correct: {short: "Correct", long: "Great"}
+  incorrect: {short: "Not quite", long: "Review"}
