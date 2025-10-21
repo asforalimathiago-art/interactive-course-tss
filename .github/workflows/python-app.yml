@@ -36,4 +36,10 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Test with pytest
       run: |
-        pytest
+        # run pytest only if there are test files (test_*.py or *_test.py)
+        if git ls-files | grep -E '(^|/)(test_.*|.*_test)\.py' > /dev/null; then
+          echo "Test files detected, running pytest..."
+          pytest
+        else
+          echo "No pytest tests found, skipping pytest"
+        fi
